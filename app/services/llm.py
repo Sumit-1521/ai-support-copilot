@@ -1,6 +1,6 @@
 from google import genai
 
-client = genai.Client(api_key="AIzaSyDTEpQFTXsTHBd_RZ9Pb63xy1NKYjNk5U0")
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 
 def generate_answer(query, context_docs):
