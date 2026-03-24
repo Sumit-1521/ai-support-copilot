@@ -2,14 +2,6 @@ from fastapi import FastAPI
 from app.routes.query import router
 from app.services.rag_pipeline import initialize_pipeline
 from app.services.retriever import load_faiss
-import os
-
-if __name__ == "__main__":
-    import uvicorn
-
-    port = int(os.environ.get("PORT", 10000))
-
-    uvicorn.run("app.main:app", host="0.0.0.0", port=port)
 
 app = FastAPI(title="AI Customer Support Copilot")
 
@@ -27,4 +19,8 @@ def home():
     return {"message": "AI Customer Support Copilot is running 🚀"}
 
 
+<<<<<<< HEAD
 app.include_router(router)
+=======
+app.include_router(router)
+>>>>>>> e0209a8 (Removed large files and fixed repo size)

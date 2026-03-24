@@ -4,4 +4,8 @@ __pycache__/
 vectorstore/
 .env
 *.pkl
+<<<<<<< HEAD
 *.faiss
+=======
+*.faiss
+>>>>>>> e0209a8 (Removed large files and fixed repo size)
